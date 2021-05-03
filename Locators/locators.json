@@ -1,0 +1,22 @@
+{
+    "SearchOnGoogleMap": {
+        "locatorType": "id",
+        "locator": "searchboxinput"
+    },
+    "Directions": {
+        "locatorType": "xpath",
+        "locator": "//button[@data-value='Directions']"
+    },
+    "carIcon": {
+        "locatorType": "css",
+        "locator": "img[aria-label=Driving]"
+    },
+    "chooseStartPoint": {
+        "locatorType": "xpath",
+        "locator": "//input[@placeholder='Choose starting point, or click on the map...']"
+    },
+    "leftPanel": {
+        "locatorType": "css",
+        "locator": "h1[class=section-directions-trip-title]"
+    }
+}
