@@ -92,12 +92,6 @@ let pageObject = function () {
         await browser.wait(expected.visibilityOf(element(by.css(allWebElement)), Max_TimeOut));
         let actualCount = await element.all(by.css(allWebElement)).count();
         expect(actualCount).to.be.greaterThan(expectedCount);
-        for (var i = 0; i < 2; i++) {
-            let test = await element.all(by.css("div[class=section-directions-trip-description]")).get(i).getText();
-            test = test + '\r\n'
-            fs.appendFileSync("routes.txt", test);
-        }
-
         deferred.fulfill();
     }
 
